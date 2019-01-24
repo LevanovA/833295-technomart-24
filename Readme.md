@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Артем  Леванов](https://up.htmlacademy.ru/htmlcss/24/user/833295).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 

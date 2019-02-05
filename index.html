@@ -58,6 +58,24 @@
         <!--Здесь будет карта-->
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
+      <!--Pop-up формы обратной связи-->
+      <section class="modal modal-letter">
+        <h2 class="visually-hidden">Форма написания письма</h2>
+        <div class="modal-top">
+          <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
+            <label for="modal-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" value="" id="modal-name">
+            <label for="modal-email">Ваше имя:</label>
+            <input type="text" name="email" placeholder="email@example.com" value="" id="modal-email">
+            <p><label for="modal-text">Текст письма:</label></p>
+            <textarea name="text" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </div>
+        <p class="modal-bottom">
+          <button class="button">Отправить</button>
+        </p>
+      </section>
     </main>
     <footer>
       <div class="footer-top">

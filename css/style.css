@@ -28,7 +28,13 @@ a {
 }
 
 .menu {
+  height: 320px;
   background-color: #f4f7f9;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /*Стили для верхней части шапки сайта*/
@@ -36,6 +42,9 @@ a {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+
+  display: flex;
+  justify-content: center;
 
   background-color: #32425c;
 }
@@ -48,7 +57,7 @@ a {
   background-color: #212a3a;
 }
 
-.header-top a:last-child:hover {
+.header-top .order:hover {
   background-color: #5fbb2d;
 }
 
@@ -56,16 +65,37 @@ a {
   background-color: #161d29;
 }
 
-.header-top a:last-child:focus {
+.header-top .logo {
+  background-color: #ee3643;
+}
+
+.header-top .logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-top .order:active {
   background-color: #518534;
 }
 
 /*Стили для середины шапки сайта*/
+.header-middle {
+  display: flex;
+  justify-content: space-around;
+}
+
 .header-middle p {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
+  width: 196px;
+}
+
+.header-middle ul {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: auto 0;
 }
 
 .contacts .contacts-phone {
@@ -104,6 +134,11 @@ a {
 }
 
 /*Стили для меню навигации*/
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 .site-navigation {
   list-style: none;
   background-color: #32425c;
@@ -124,10 +159,19 @@ a {
 }
 
 /*Стили для главной страницы*/
+.company {
+  display: flex;
+  justify-content: space-between;
+}
+
 .company h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.company-description {
+  width: 520px;
 }
 
 .company-transport {
@@ -137,6 +181,10 @@ a {
 .company-transport li {
   font-size: 18px;
   line-height: 20px;
+}
+
+.company-address {
+  width: 300;
 }
 
 /*Стили для каталога*/
@@ -255,8 +303,19 @@ a {
   background-color: #32425c;
 }
 
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top .logo {
+  background-color: #ee3643;
+}
+
 .footer-top ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom {
@@ -264,7 +323,12 @@ a {
   line-height: 18px;
   color: #ffffff;
 
-  background-color: #1d2739;
+  background-color: #293449;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom .social-button {

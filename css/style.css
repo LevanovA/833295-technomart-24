@@ -27,7 +27,7 @@ a {
   vertical-align: middle;
 }
 
-header {
+.menu {
   background-color: #f4f7f9;
 }
 
@@ -40,7 +40,7 @@ header {
   background-color: #32425c;
 }
 
-.header-top a:last-child {
+.header-top .order {
   background-color: #63a63e;
 }
 

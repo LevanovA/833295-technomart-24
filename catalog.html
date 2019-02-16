@@ -12,26 +12,34 @@
 <body>
   <header class="menu">
     <div class="header-top">
-      <a href="index.html">
-        <img src="#" alt="Логотип Техномарт">
+      <div class="container">
+      <a class="logo" href="index.html">
+        <img src="./img/logo.svg" alt="Логотип Техномарт">
       </a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <input class="search-input" type="search" placeholder="Поиск:">
+      </form>
       <a class="bookmarks" href="#">Закладки: 0</a>
       <a class="basket basket-active" href="#">Корзина: 0</a>
       <a class="order" href="#">Оформить заказ</a>
     </div>
+    </div>
+    <div class="container">
     <div class="header-middle">
-      <p>Интернет-магазин строительных материалов и инструментов для дома</p>
+      <p class="headline">Интернет-магазин строительных материалов и инструментов для дома</p>
       <div class="contacts">
         <p class="contacts-phone"> +7 (812) 555-05-55</p>
         <p class="contacts-address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
       </div>
-      <p class="user">Равшан Джамшутович</p>
-      <ul class="user-navigation">
+      <div class="user">
+      <p class="user-name">Равшан Джамшутович</p>
+      <ul>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>
-    <nav>
+    </div>
+    <nav class="navigation">
       <ul class="site-navigation">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -42,8 +50,10 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <main class="catalog">
+    <div class="container">
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог</a></li>
@@ -51,6 +61,7 @@
       <li class="breadcrumbs-current">Перефараторы</li>
     </ul>
     <h1 class="page-title">Перфораторы</h1>
+    <div class="filter-catalog">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -168,6 +179,41 @@
           <h3><a class="card-name" href="#">Перфоратор Bosch BFG 2000</a></h3>
           <p class="discount-price">12500 р.</p>
         </li>
+        <li class="catolog-item">
+            <a href="#">
+              <img src="./img/bosch3000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+            </a>
+            <p class="catolog-item-button">
+              <a class="button-green" href="#">Купить</a>
+              <a class="button-green" href="#">В закладки</a>
+            </p>
+            <h3><a class="card-name" href="#">Перфоратор Bosch BFG 3000</a></h3>
+            <p class="price">22500 р.</p>
+            <p class="discount-price">15500 р.</p>
+          </li>
+          <li class="catolog-item">
+            <a href="#">
+              <img src="./img/bosch6000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+            </a>
+            <p class="catolog-item-button">
+              <a class="button-green" href="#">Купить</a>
+              <a class="button-green" href="#">В закладки</a>
+            </p>
+            <h3><a class="card-name" href="#">Перфоратор Bosch BFG 6000</a></h3>
+            <p class="price">30500 р.</p>
+            <p class="discount-price">25500 р.</p>
+          </li>
+          <li class="catolog-item">
+            <a href="#">
+              <img src="./img/bosch2000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+            </a>
+            <p class="catolog-item-button">
+              <a class="button-green" href="#">Купить</a>
+              <a class="button-green" href="#">В закладки</a>
+            </p>
+            <h3><a class="card-name" href="#">Перфоратор Bosch BFG 2000</a></h3>
+            <p class="discount-price">12500 р.</p>
+          </li>
       </ul>
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -176,50 +222,66 @@
         <li class="pagination-item"><a href="#">Следующая</a></li>
       </ul>
     </section>
-    <!--Pop-up добавления товара в корзину-->
-    <section class="modal modal-productbasket">
-      <p class="modal-top">Товар добавлен в корзину!
-        <button class="modal-close" type="button">Закрыть</button>
-      </p>
-      <p class="modal-bottom">
-        <a class="button" href="#">Оформить заказ</a>
-        <button class="button">Продолжить покупки</button>
-      </p>
-    </section>
+  </div>
+  </div>
   </main>
   <footer>
-    <div class="footer-top">
-      <a href="#">
-        <img src="#" alt="Логотип Техномарт">
-      </a>
-      <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
-        +7 (812) 555-05-55</p>
-      <ul class="footer-menu">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Католог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="footer-categories">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструменты</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2010-2017 Компания &laquo;Техномарт&raquo; <br>
-        Все права защищены</p>
-      <a href="#">Инстаграм</a>
-      <a href="#">Фейсбук</a>
-      <a href="#">Вконтакте</a>
-      <p>Обратная связь: <br>
-        <a class="footer-yellow-name" href="#">mail@htmlacademy.ru</a></p>
-      <p>Разработано - <br>
-        <a class="footer-yellow-name" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-    </div>
+      <div class="footer-top">
+          <div class="container">
+            <div class="footer-top-items">
+          <a href="#">
+            <img class="logo" src="./img/logo.svg" alt="Логотип Техномарт">
+          </a>
+          <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
+            +7 (812) 555-05-55</p>
+            </div>
+            <div class="footer-top-items">
+          <ul class="footer-menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Католог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-categories">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструменты</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+          <div class="footer-bottom-items">
+          <p>&copy; 2010-2017 Компания &laquo;Техномарт&raquo; <br>
+            Все права защищены</p>
+          </div>
+            <div class="footer-bottom-items">
+          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#">Вконтакте</a>
+          </div>
+          <div class="footer-bottom-items">
+          <p>Обратная связь: <br>
+            <a class="footer-yellow-name" href="#">mail@htmlacademy.ru</a></p>
+          <p>Разработано - <br>
+            <a class="footer-yellow-name" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
+          </div>
+        </div>
   </footer>
+      <!--Pop-up добавления товара в корзину-->
+      <section class="modal modal-productbasket">
+          <p class="modal-top">Товар добавлен в корзину!
+            <button class="modal-close" type="button">Закрыть</button>
+          </p>
+          <p class="modal-bottom">
+            <a class="button" href="#">Оформить заказ</a>
+            <button class="button">Продолжить покупки</button>
+          </p>
+        </section>
 </body>
 
 </html>

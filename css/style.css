@@ -28,7 +28,6 @@ a {
 }
 
 .menu {
-  height: 320px;
   background-color: #f4f7f9;
 }
 .container {
@@ -47,6 +46,11 @@ a {
   justify-content: center;
 
   background-color: #32425c;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-top .order {
@@ -83,7 +87,7 @@ a {
   justify-content: space-around;
 }
 
-.header-middle p {
+.header-middle .headline {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
@@ -91,17 +95,35 @@ a {
   width: 196px;
 }
 
-.header-middle ul {
+.header-middle .user-navigation {
   display: flex;
   justify-content: space-between;
   width: 280px;
   margin: auto 0;
 }
 
+.user a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user .user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
 .contacts .contacts-phone {
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
+  color: #ee3643;
   border: 2px solid #ffffff;
 }
 
@@ -134,13 +156,15 @@ a {
 }
 
 /*Стили для меню навигации*/
-.navigation ul {
-  display: flex;
-  justify-content: space-around;
+.navigation {
+  padding-bottom: 60px;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+
   background-color: #32425c;
 }
 
@@ -189,6 +213,7 @@ a {
 
 /*Стили для каталога*/
 .breadcrumbs {
+  display: flex;
   list-style: none;
 }
 
@@ -198,6 +223,12 @@ a {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.filter-catalog {
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-title {
@@ -233,6 +264,12 @@ a {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.catolog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .catalog ul {
   list-style: none;
 }
@@ -240,6 +277,7 @@ a {
 .catolog-item {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
 }
 
 .catolog-item:hover {
@@ -273,7 +311,10 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-start;
   list-style: none;
+  margin-left: 10px;
 }
 
 .pagination-item a {

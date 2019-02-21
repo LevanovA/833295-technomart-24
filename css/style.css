@@ -432,21 +432,57 @@ input[type="radio"].visually-hidden {
   padding: 13px 40px;
 }
 
-/*Стили для меню пользователя в каталоге*/
-
 /*Стили для каталога*/
 .breadcrumbs {
   display: flex;
   list-style: none;
+  position: relative;
+
+  margin: 25px 0px;
+  padding: 0;
+}
+
+.breadcrumbs::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 0px;
+
+  width: 14px;
+  height: 12px;
+
+  background-image: url("../img/icon-home.svg");
 }
 
 .breadcrumbs a,
 .breadcrumbs li {
   font-size: 13px;
   line-height: 18px;
+
   color: #000000;
   text-transform: uppercase;
-  margin-left: 10px;
+}
+
+.breadcrumbs li {
+  margin-left: 30px;
+}
+
+.breadcrumbs .next {
+  position: relative;
+}
+
+.breadcrumbs .next::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: -20px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
 }
 
 .filter-catalog {
@@ -458,12 +494,19 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  margin: 0;
+
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   background-color: #f2f6f8;
   text-transform: uppercase;
 }
 
 .filter fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -471,6 +514,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 
   text-transform: uppercase;
 }
@@ -480,11 +524,56 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 20px;
 
+  margin: 0;
+  padding: 0;
+
   text-transform: uppercase;
+}
+
+.filter .filter-option {
+  margin-bottom: 17px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -35px;
+
+  width: 21px;
+  height: 21px;
+
+  border: 2px solid #bdc6ca;
 }
 
 .filter-input:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: -33px;
+
+  width: 27px;
+  height: 23px;
+
+  border: none;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catolog-list {

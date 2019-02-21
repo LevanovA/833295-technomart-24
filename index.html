@@ -14,9 +14,13 @@
     <div class="header-top">
       <div class="container">
         <a class="logo" href="#">
-          <img src="./img/logo.svg" alt="Логотип Техномарт">
+          <img width="111px" height="18px" src="./img/logo.svg" alt="Логотип Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="search-submit">
+            <input type="submit" class="visually-hidden">
+            <span class="submit-indicator"></span>
+          </label>
           <input class="search-input" type="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
@@ -32,8 +36,8 @@
           <p class="contacts-address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Регистрация</a></li>
+          <li><a class="enter" href="#">Войти</a></li>
+          <li><a class="registration" href="#">Регистрация</a></li>
         </ul>
       </div>
       <nav class="navigation">
@@ -63,29 +67,29 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <a class="button button-transport" href="#">Подробнее о компании</a>
         </section>
         <section class="company-address">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товары сами,
+          <p>Вы можете забрать товары сами, <br>
             заехав в наш офис:</p>
-          <!--Здесь будет карта-->
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <img src="./img/5.jpg" width="300px" height="160px" alt="Адрес на карте">
+          <a class="button button-map" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="footer-top-items">
-          <a href="#">
-            <img class="logo" src="./img/logo.svg" alt="Логотип Техномарт">
+        <div class="footer-top-adress">
+          <a class="logo" href="#">
+            <img width="138px" height="23px" src="./img/logo.svg" alt="Логотип Техномарт">
           </a>
           <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
             +7 (812) 555-05-55</p>
         </div>
-        <div class="footer-top-items">
+        <div class="footer-top-menu">
           <ul class="footer-menu">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -104,16 +108,16 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <div class="footer-bottom-items">
+        <div class="footer-bottom-copy">
           <p>&copy; 2010-2017 Компания &laquo;Техномарт&raquo; <br>
             Все права защищены</p>
         </div>
-        <div class="footer-bottom-items">
-          <a class="social-button" href="#">Инстаграм</a>
-          <a class="social-button" href="#">Фейсбук</a>
-          <a class="social-button" href="#">Вконтакте</a>
+        <div class="footer-bottom-social">
+          <a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-button social-button-face" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social-button social-button-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </div>
-        <div class="footer-bottom-items">
+        <div class="footer-bottom-feedback">
           <p>Обратная связь: <br>
             <a class="footer-yellow-name" href="#">mail@htmlacademy.ru</a></p>
           <p>Разработано - <br>

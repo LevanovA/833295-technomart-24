@@ -30,10 +30,10 @@
     </div>
     <div class="container">
       <div class="header-middle">
-        <p class="headline">Интернет-магазин строительных материалов и&nbsp;инструментов для дома</p>
+        <p class="headline">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
         <div class="contacts">
           <p class="contacts-phone"> +7 (812) 555-05-55</p>
-          <p class="contacts-address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-navigation">
           <li><a class="enter" href="#">Войти</a></li>
@@ -42,13 +42,13 @@
       </div>
       <nav class="navigation">
         <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a class="site-navigation-items site-navigation-first" href="index.html">Главная</a></li>
+          <li><a class="site-navigation-items" href="#">Компания</a></li>
+          <li><a class="site-navigation-items" href="catalog.html">Каталог</a></li>
+          <li><a class="site-navigation-items" href="#">Новости</a></li>
+          <li><a class="site-navigation-items" href="#">Спецпредложения</a></li>
+          <li><a class="site-navigation-items" href="#">Доставка</a></li>
+          <li><a class="site-navigation-items site-navigation-last" href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -129,20 +129,30 @@
   <!--Pop-up формы обратной связи-->
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Форма написания письма</h2>
-    <div class="modal-top-letter">
-      <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
-        <label for="modal-name">Ваше имя:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" value="" id="modal-name">
-        <label for="modal-email">Ваше имя:</label>
-        <input type="text" name="email" placeholder="email@example.com" value="" id="modal-email">
-        <p><label for="modal-text">Текст письма:</label></p>
-        <textarea name="text" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </form>
-      <button class="button modal-close" type="button">Закрыть</button>
-    </div>
-    <p class="modal-bottom">
-      <button class="button">Отправить</button>
-    </p>
+      
+      <div class="modal-top-letter">
+          <div class="container-modal">
+       <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="letter-form-item">
+          <label for="modal-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" value="" id="modal-name">
+        </p>
+          <p class="letter-form-item">
+          <label for="modal-email">Ваше имя:</label>
+          <input type="text" name="email" placeholder="email@example.com" value="" id="modal-email">
+        </p>
+          <p class="letter-form-item">
+            <label for="modal-text">Текст письма:</label>
+            <textarea name="text" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </p>
+        </form>
+       <button class="button modal-close" type="button">Закрыть</button>
+      </div>
+      </div>
+      <p class="modal-bottom">
+        <button class="button button-map">Отправить</button>
+      </p>
+    
   </section>
 </body>
 

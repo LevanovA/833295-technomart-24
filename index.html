@@ -15,12 +15,11 @@
     <div class="header-top">
       <div class="container">
         <a class="logo" href="#">
-          <img width="111px" height="18px" src="./img/logo.svg" alt="Логотип Техномарт">
+          <img width="110px" height="18px" src="./img/logo.svg" alt="Логотип Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-submit">
-            <input type="submit" class="visually-hidden">
-            <span class="submit-indicator"></span>
+            <input type="submit" class="submit-indicator">
           </label>
           <input class="search-input" type="search" placeholder="Поиск:">
         </form>
@@ -56,11 +55,160 @@
   </header>
   <main>
     <div class="container">
+      <section class="promo">
+        <div class="promo-column">
+          <div class="promo-item promo-item-materials">
+            <p>Материалы</p>
+            <a href="#" class="button promo-item-button">На любой вкус</a>
+          </div>
+          <div class="promo-item promo-item-instruments">
+            <p>Инструмент</p>
+            <a href="#" class="button promo-item-button">На все случаи</a>
+          </div>
+          <div class="promo-item slider">
+              <div class="slider-controls">
+              </div>
+              <ul class="slider-list">
+                <li class="slider-item">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+                </li>
+                <li class="slider-item">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="promo-column">
+          <div class="promo-item promo-item-equipment">
+           <p>Техника</p>
+           <a href="#" class="button promo-item-button">Для стройки</a>
+          </div>
+          <div class="promo-item promo-item-sale">
+            <p>Скидка 50%</p>
+            <a href="#" class="button promo-item-button">На 350 товаров</a>
+          </div>
+          <div class="promo-item promo-item-delivery">
+            <p>Доставка</p>
+            <a href="#" class="button promo-item-button">Бесплатно</a>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="section-headline">
+          <h2>Популярные товары:</h2>
+          <a href="#" class="button section-headline-button">Все популярные товары</a>
+        </div>
+        <ul class="catolog-list">
+            <li class="catolog-item">
+                <a href="#">
+                  <img src="./img/bosch9000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
+                </a>
+                <p class="catolog-item-button">
+                  <a class="button-green-buy" href="#"><span class="catolog-item-basket"></span>Купить</a>
+                  <a class="button-green-bookmark" href="#">В закладки</a>
+                </p>
+                <h3><a class="card-name" href="#">Перфоратор Bosch<span class="item-model">BFG 3000</span></a></h3>
+                <p class="price">32500 р.</p>
+                <p class="discount-price">25500 р.</p>
+              </li>
+            <li class="catolog-item">
+              <a href="#">
+                <img src="./img/bosch3000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+              </a>
+              <p class="catolog-item-button">
+                <a class="button-green-buy" href="#"><span class="catolog-item-basket"></span>Купить</a>
+                <a class="button-green-bookmark" href="#">В закладки</a>
+              </p>
+              <h3><a class="card-name" href="#">Перфоратор Bosch<span class="item-model">BFG 3000</span></a></h3>
+              <p class="price">22500 р.</p>
+              <p class="discount-price">15500 р.</p>
+            </li>
+            <li class="catolog-item">
+              <a href="#">
+                <img src="./img/bosch6000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+              </a>
+              <p class="catolog-item-button">
+                <a class="button-green-buy" href="#"><span class="catolog-item-basket"></span>Купить</a>
+                <a class="button-green-bookmark" href="#">В закладки</a>
+              </p>
+              <h3><a class="card-name" href="#">Перфоратор Bosch<span class="item-model">BFG 6000</span></a></h3>
+              <p class="price">30500 р.</p>
+              <p class="discount-price">25500 р.</p>
+            </li>
+            <li class="catolog-item">
+              <a href="#">
+                <img src="./img/bosch2000.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+              </a>
+              <div class="strip">новинка</div>
+              <p class="catolog-item-button">
+                <a class="button-green-buy" href="#"><span class="catolog-item-basket"></span>Купить</a>
+                <a class="button-green-bookmark" href="#">В закладки</a>
+              </p>
+              <div class="without-price">
+                <h3><a class="card-name" href="#">Перфоратор Bosch<span class="item-model">BFG 2000</span></a></h3>
+                <p class="discount-price">12500 р.</p>
+              </div>
+            </li>
+          </ul>     
+      </section>
+      <section class="manufacturers">
+        <div class="section-headline">
+          <h2>Популярные производители:</h2>
+          <a href="#" class="button section-headline-button">Все производители</a>
+        </div>
+        <div class="manufacture-items">
+        <div class="manufacture-item">
+          <a href="#">
+            <img src="./img/manufacturers-bosch.jpg" alt="bosch" width="126" height="37">
+          </a>
+        </div>
+        <div class="manufacture-item">
+          <a href="#">
+            <img src="./img/manufacturers-makita.jpg" alt="bosch" width="123" height="40">
+          </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-de-walt.jpg" alt="bosch" width="146" height="44">
+            </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-invalid-name.jpg" alt="bosch" width="200" height="88">
+            </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-hitachi.jpg" alt="bosch" width="169" height="31">
+            </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-lg.jpg" alt="bosch" width="121" height="73">
+            </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-aeg.jpg" alt="bosch" width="151" height="96">
+            </a>
+        </div>
+        <div class="manufacture-item">
+            <a href="#">
+              <img src="./img/manufacturers-metabo.jpg" alt="bosch" width="204" height="69">
+            </a>
+        </div>
+        </div>
+      </section>
+      
       <div class="company">
         <section class="company-description">
           <h2>Компания &laquo;Техномарт&raquo;</h2>
-          <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
-            строительства не оставит равнодушним любителей сэкономить на гастарбайтерах</p>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
             Техномарт работает со многими транспортными компнаиями:</p>
           <ul class="company-transport">

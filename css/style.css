@@ -67,13 +67,14 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  margin-bottom: 28px;
+  margin-bottom: 45px;
 
   background-color: #293449;
 }
 
 .header-top .container {
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -136,40 +137,45 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top .logo {
-  position: absolute;
   padding: 13px 55px;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: -5px;
 }
 
 .search {
   position: relative;
+
 }
 
-.search-submit input[type="submit"] + .submit-indicator {
+.submit-indicator {
   position: absolute;
   top: 13px;
-  left: 238px;
+  left: 13px;
 
   width: 17px;
   height: 17px;
 
   background-image: url("../img/icon-search-normal.svg");
+  background-color: transparent;
   opacity : 0.2;
+  border: none;
+  text-indent: 1000%;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .basket:hover::before,
 .bookmarks:hover::before,
-.search:hover .search-submit input[type="submit"] + .submit-indicator {
+.search:hover .submit-indicator {
   opacity : 1;
 }
 
-.search:focus .search-submit input[type="submit"] + .submit-indicator {
+.search:focus .submit-indicator {
   background-image: url("../img/icon-search-focus.svg");
 }
+
 .search .search-input {
-  margin-left: 221px;
   font-size: 17px;
   line-height: 18px;
   width: 265px;
@@ -202,7 +208,7 @@ input[type="radio"].visually-hidden {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 25px;
 }
 
@@ -213,6 +219,8 @@ input[type="radio"].visually-hidden {
   font-style: italic;
   width: 205px;
   margin-left: 53px;
+  padding-top: 5px;
+  margin-top: 0;
 }
 
 .user a {
@@ -228,10 +236,10 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  padding: 12px 70px 10px 50px;
+  padding: 12px 70px 13px 50px;
   text-transform: uppercase;
   font-style: normal;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 
   background-color: #ffffff;
 }
@@ -301,7 +309,8 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-left: 75px;
   padding-bottom: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
+  margin-top: 0;
 
   border: 3px solid #ffffff;
 }
@@ -345,7 +354,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .enter {
   position: relative;
-  padding: 13px 27px 15px 48px;
+  padding: 12px 27px 10px 48px;
 }
 
 .user-navigation .enter::before {
@@ -374,7 +383,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .registration {
-  padding: 13px 25px 15px 25px;
+  padding: 12px 25px 10px 25px;
 }
 
 .user-navigation a:focus {
@@ -424,6 +433,195 @@ input[type="radio"].visually-hidden {
 }
 
 /*Стили для главной страницы*/
+/*Стили для промо блока*/
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #518534;
+  margin-bottom: 53px;
+}
+
+.promo-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.promo-item {
+  width: 300px;
+  height: 123px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.promo-item p {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 23px;
+  margin-top: 25px;
+}
+
+.promo-item .promo-item-button {
+  width: 135px;
+  margin: 0px;
+  margin-left: 25px;
+  margin-top: 15px;
+  padding: 13px 0;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-item .promo-item-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-item .promo-item-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-item-materials {
+  background-color: #ffbf47;
+  background-image: url("../img/promo-bucket.svg");
+  background-position: 215px 30px;
+  background-repeat: no-repeat;
+}
+
+.promo-item-instruments {
+  background-color: #3bbce3;
+  background-image: url("../img/promo-drill.svg");
+  background-position: 200px 30px;
+  background-repeat: no-repeat;
+}
+
+.promo-item-equipment {
+  background-color: #dc91d8;
+  background-image: url("../img/promo-tractor.svg");
+  background-position: 190px 30px;
+  background-repeat: no-repeat;
+}
+
+.promo-item-sale {
+  background-color: #8ed78f;
+  background-image: url("../img/promo-truck.svg");
+  background-position: 195px 30px;
+  background-repeat: no-repeat;
+}
+
+.promo-item-delivery {
+  background-color: #ffc047;
+  background-image: url("../img/promo-machine.svg");
+  background-position: 190px 30px;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  flex-grow: 1;
+  position: relative;
+  min-width: 620px;
+  min-height: 266px;
+
+  background-color: #293449;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 25px 0 20px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-left: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slider-item p {
+  max-width: 400px;
+  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 125px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  width: 195px;
+  padding: 13px 0;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/promo-slide1.jpg");
+  background-repeat: no-repeat;
+}
+
+/*Стили для блока популярных товаров*/
+
+.section-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #f9f5f0;
+}
+
+.section-headline h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  margin-left: 30px;
+
+  text-transform: uppercase;
+}
+
+.section-headline-button {
+  display: block;
+  min-width: 253px;
+  margin-right: 25px;
+  padding: 10px 0;
+}
+
+/*Стили для блока производителей*/
+
+.manufacture-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.manufacture-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+}
+
 .company {
   display: flex;
   justify-content: space-between;
@@ -432,6 +630,7 @@ input[type="radio"].visually-hidden {
 
 .company h2 {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -442,7 +641,7 @@ input[type="radio"].visually-hidden {
 
 .company-description p,
 .company-address p {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 23px;
@@ -497,6 +696,16 @@ input[type="radio"].visually-hidden {
 
 .button-transport {
   padding: 10px 40px;
+}
+
+.button-map:hover,
+.button-transport:hover {
+  background-color: #ca2c37;
+}
+
+.button-map:active,
+.button-transport:active {
+  background-color: #ba2732;
 }
 
 /*Стили для каталога*/
@@ -725,7 +934,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
 
 .catalog ul {
@@ -900,6 +1109,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  font-family: PT Sans;
   display: flex;
   justify-content: flex-start;
   list-style: none;
@@ -968,6 +1178,10 @@ input[type="radio"].visually-hidden {
   padding: 20px 40px;
 
   background-color: #ee3643;
+}
+
+.footer-top .logo:hover {
+  background-color: #ca2c37;
 }
 
 .footer-top-adress {

@@ -18,10 +18,10 @@
           <img width="110px" height="18px" src="./img/logo.svg" alt="Логотип Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-input" type="search" placeholder="Поиск:">
           <label class="search-submit">
             <input type="submit" class="submit-indicator">
           </label>
-          <input class="search-input" type="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
@@ -60,6 +60,7 @@
           <div class="promo-item promo-item-materials">
             <p>Материалы</p>
             <a href="#" class="button promo-item-button">На любой вкус</a>
+            <div class="promo-strip">новинка</div>
           </div>
           <div class="promo-item promo-item-instruments">
             <p>Инструмент</p>
@@ -161,46 +162,31 @@
           <a href="#" class="button section-headline-button">Все производители</a>
         </div>
         <div class="manufacture-items">
-        <div class="manufacture-item">
-          <a href="#">
+        
+          <a href="#" class="manufacture-item">
             <img src="./img/manufacturers-bosch.jpg" alt="bosch" width="126" height="37">
           </a>
-        </div>
-        <div class="manufacture-item">
-          <a href="#">
+          <a href="#" class="manufacture-item">
             <img src="./img/manufacturers-makita.jpg" alt="bosch" width="123" height="40">
           </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-de-walt.jpg" alt="bosch" width="146" height="44">
             </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-invalid-name.jpg" alt="bosch" width="200" height="88">
             </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-hitachi.jpg" alt="bosch" width="169" height="31">
             </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-lg.jpg" alt="bosch" width="121" height="73">
             </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-aeg.jpg" alt="bosch" width="151" height="96">
             </a>
-        </div>
-        <div class="manufacture-item">
-            <a href="#">
+            <a href="#" class="manufacture-item">
               <img src="./img/manufacturers-metabo.jpg" alt="bosch" width="204" height="69">
             </a>
-        </div>
         </div>
       </section>
       </div>
@@ -212,17 +198,39 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="services-slider">
-          <div class="services-control"></div>
+          <div class="services-control">
+            <div class="services-boxshadow"></div>
+            <div class="services-control-item services-control-delivery">Доставка</div>
+            <div class="services-control-item services-control-warranty">Гарантия</div>
+            <div class="services-control-item services-control-credit">Кредит</div>
+          </div>
           <ul class="services-list">
             <li class="services-item">
               <h3>Доставка</h3>
               <p>
-                Мы с удовольствием доставим ваш товар прямо 
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, 
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!
               </p>
             </li>
+            <li class="services-item">
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит,<br> 
+                а также в случае пожара, спровоцированного его возгаранием,<br> 
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> 
+                сгоревший товар на новый.<br> 
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="services-item">
+              <h3>Доставка</h3>
+              <p>
+                Залезть в долговую яму стало проще!<br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+            </li>  
           </ul>
         </div>
       </div>

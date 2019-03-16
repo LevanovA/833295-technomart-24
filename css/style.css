@@ -163,6 +163,7 @@ input[type="radio"].visually-hidden {
   text-indent: 1000%;
   overflow: hidden;
   cursor: pointer;
+  z-index: 20;
 }
 
 .basket:hover::before,
@@ -171,7 +172,7 @@ input[type="radio"].visually-hidden {
   opacity : 1;
 }
 
-.search:focus .submit-indicator {
+.search-input:focus + .submit-indicator {
   background-image: url("../img/icon-search-focus.svg");
 }
 
@@ -462,8 +463,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
-  background-color: #518534;
   margin-bottom: 53px;
+  padding-top: 30px;
 }
 
 .promo-column {
@@ -474,7 +475,12 @@ input[type="radio"].visually-hidden {
   padding: 0px;
 }
 
+.promo-column:last-child {
+  justify-content: flex-end;
+}
+
 .promo-item {
+  position: relative;
   width: 300px;
   height: 123px;
   margin: 0px;
@@ -488,6 +494,21 @@ input[type="radio"].visually-hidden {
   padding: 0px;
   margin-left: 23px;
   margin-top: 25px;
+}
+
+.promo-strip {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .promo-item .promo-item-button {
@@ -596,6 +617,16 @@ input[type="radio"].visually-hidden {
   margin-left: 25px;
 }
 
+.slider-button:hover,
+.section-headline-button:hover {
+  background-color: #ca2c37;
+}
+
+.slider-button:active,
+.section-headline-button:active {
+  background-color: #ba2732;
+}
+
 .slider-item:nth-child(1) {
   background-image: url("../img/promo-slide1.jpg");
   background-repeat: no-repeat;
@@ -609,6 +640,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   padding: 5px 0;
   background-color: #f9f5f0;
+  margin-bottom: 20px;
 }
 
 .section-headline h2 {
@@ -633,22 +665,33 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 85px;
 }
 
 .manufacture-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
   width: 220px;
   height: 145px;
   border: 1px solid #eaeaea;
-  margin-top: 20px;
+}
+
+.manufacture-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacture-item:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 /*Стили для блока сервисов*/
 
 .services {
   background-color: #f4f7f9;
+  padding-top: 68px;
 }
 
 .services-headline {
@@ -663,6 +706,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 24px;
   width: 400px;
+  margin: 0;
 }
 
 .services-slider {
@@ -671,25 +715,87 @@ input[type="radio"].visually-hidden {
 }
 
 .services-control {
+  position: relative;
   width: 240px;
   height: 183px;
+  padding: 46px 0 48px 0;
+  margin-top: 28px;
+}
 
+.services-boxshadow {
+  position: absolute;
+  width: 10px;
+  height: 280px;
+
+  top: -5px;
+  left: 230px;
+
+  background-image: url("../img/services-boxshadow.png");
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.services-control-item {
+  font-size: 21px;
+  line-height: 30px;
+  padding: 16px 22px 16px;
   background-color: #32425c;
+}
+
+.services-control-delivery {
+  background-color: #ffffff;
+}
+
+.services-control-warranty,
+.services-control-credit {
+  color: #ffffff;
+}
+
+.services-control-warranty {
+  border-bottom: 1px solid #293449;
+}
+
+.services-control-credit {
+  border-top: 1px solid #405069;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
+  margin-top: 75px;
   
   list-style: none;
 }
 
 .services-item {
-  padding: 75px 0 75px 0;
+  height: 280px;
+  width: 700px;
+}
 
+.services-item:nth-child(1) {
   background-image: url("../img/services-machine.png");
   background-repeat: no-repeat;
+  background-position: right 25px;
+}
+
+.services-item:nth-child(2) {
+  background-image: url("../img/services-sign.png");
+  background-repeat: no-repeat;
   background-position: right;
+}
+
+.services-item:nth-child(3) {
+  background-image: url("../img/services-credit.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.services-item {
+  display: none;
+}
+
+.services-item:nth-child(1) {
+  display: block;
 }
 
 .services-item h3 {
@@ -708,6 +814,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin-left: 80px;
 }
+
+/*Стили для блока о компании*/
 
 .company {
   display: flex;
@@ -845,8 +953,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*Стилизация фильтра*/
-
-
 
 .filter-catalog {
   display: flex;

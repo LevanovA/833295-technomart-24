@@ -872,6 +872,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 20px;
   padding-left: 18px;
   min-width: 220px;
   padding-top: 10px;
@@ -887,9 +888,10 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 20px;
   padding-left: 18px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   background-color: #f7f3ec;
   text-transform: uppercase;
@@ -900,19 +902,27 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.sorting-name-price {
-  color: #ee3643;
-  margin-left: 139px;
-}
-
-.sorting-name-type,
-.sorting-name-function {
+.sorting-name {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed #ee3643;
 }
 
+.sorting-name:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-name:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
 .sorting-name-type {
   margin-left: 71px;
+}
+
+.sorting-name-price {
+  margin-left: 139px;
 }
 
 .sorting-name-function {
@@ -921,18 +931,37 @@ input[type="radio"].visually-hidden {
 
 .sorting-up {
   margin-left: 41px;
+  margin-top: 5px;
   width: 11px;
   height: 10px;
   background-image: url("../img/sorting-up.svg");
   background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .sorting-down {
   margin-left: 21px;
+  margin-top: 5px;
   width: 11px;
   height: 10px;
   background-image: url("../img/sorting-down.svg");
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.sorting-up:hover,
+.sorting-down:hover {
+  opacity: 1;
+}
+
+.sorting-up:active {
+  background-image: url("../img/sorting-up-activ.svg");
+  opacity: 1;
+}
+
+.sorting-down:active {
+  background-image: url("../img/sorting-down-activ.svg");
+  opacity: 1;
 }
 
 .filter fieldset {
@@ -1167,15 +1196,19 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.catalog {
+  margin-left: 20px;
+}
+
 .catolog-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
   justify-content: space-between;
   font-family: "PT Sans";
-}
 
-.catalog ul {
-  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catolog-item {

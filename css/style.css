@@ -435,6 +435,10 @@ input[type="radio"].visually-hidden {
 /*Стили для главной страницы*/
 /*Стили для промо блока*/
 
+.catalog .container {
+  padding-bottom: 60px;
+}
+
 .promo {
   display: flex;
   justify-content: space-between;
@@ -701,6 +705,7 @@ input[type="radio"].visually-hidden {
 
 .company-description {
   width: 520px;
+  margin-bottom: 85px;
 }
 
 .company-description p,
@@ -827,7 +832,7 @@ input[type="radio"].visually-hidden {
 .filter-catalog {
   display: flex;
   justify-content: space-between;
-  font-family: PT Sans;
+  font-family: "PT Sans";
 }
 
 .page-title {
@@ -856,6 +861,59 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+
+.sorting {
+  display: flex;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.sorting-headline {
+  margin: 0;
+}
+
+.sorting-name-price {
+  color: #ee3643;
+  margin-left: 139px;
+}
+
+.sorting-name-type,
+.sorting-name-function {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #ee3643;
+}
+
+.sorting-name-type {
+  margin-left: 71px;
+}
+
+.sorting-name-function {
+  margin-left: 65px;
+}
+
+.sorting-up {
+  margin-left: 41px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/sorting-up.svg");
+  background-repeat: no-repeat;
+}
+
+.sorting-down {
+  margin-left: 21px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/sorting-down.svg");
+  background-repeat: no-repeat;
 }
 
 .filter fieldset {
@@ -1317,12 +1375,37 @@ input[type="radio"].visually-hidden {
   padding-right: 30px;
 }
 
+.about-reformers {
+  background-color: #f4f7f9;
+}
+
+.about-reformers .container {
+  padding-top: 65px;
+}
+
+.about-reformers-headline {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+}
+
+.about-reformers-description {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans";
+
+  margin: 0;
+  padding: 0;
+}
+
 /*Стили для подвала*/
 .footer-top {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  margin-top: 85px;
 
   background-color: #32425c;
 }

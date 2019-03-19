@@ -79,7 +79,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top .basket {
-  padding: 13px 30px 11px 49px;
+  padding: 13px 30px 11px 48px;
   position: relative;
 }
 
@@ -117,8 +117,9 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top .order {
-  padding: 13px 19px 11px 21px;
+  padding: 13px 20px 11px 21px;
   background-color: #63a63e;
+  text-align: center;
 }
 
 .header-top .bookmarks:hover,
@@ -151,7 +152,7 @@ input[type="radio"].visually-hidden {
 .submit-indicator {
   position: absolute;
   top: 13px;
-  left: 13px;
+  left: 18px;
 
   width: 17px;
   height: 17px;
@@ -182,7 +183,7 @@ input[type="radio"].visually-hidden {
   width: 265px;
   padding-top: 14px;
   padding-bottom: 11px; 
-  padding-left: 48px;
+  padding-left: 49px;
   outline: none;
 
   background-color: transparent;
@@ -210,7 +211,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .header-middle .headline {
@@ -326,8 +327,8 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-style: normal;
   color: #ee3643;
-  padding-top: 9px;
-  padding-left: 75px;
+  padding-top: 10px;
+  padding-left: 70px;
   padding-bottom: 10px;
   margin-bottom: 4px;
   margin-top: 0;
@@ -339,8 +340,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 9px;
-  left: 15px;
+  top: 10px;
+  left: 11px;
 
   width: 19px;
   height: 19px;
@@ -374,15 +375,15 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .enter {
   position: relative;
-  padding: 12px 27px 10px 48px;
+  padding: 12px 25px 10px 45px;
 }
 
 .user-navigation .enter::before {
   content: "";
 
   position: absolute;
-  top: 17px;
-  left: 14px;
+  top: 15px;
+  left: 12px;
 
   width: 20px;
   height: 17px;
@@ -412,7 +413,7 @@ input[type="radio"].visually-hidden {
 
 /*Стили для меню навигации*/
 .navigation {
-  padding-bottom: 60px;
+  padding-bottom: 47px;
 }
 
 .site-navigation {
@@ -463,8 +464,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
-  margin-bottom: 53px;
-  padding-top: 30px;
+  margin-bottom: 52px;
+  padding-top: 40px;
 }
 
 .promo-column {
@@ -488,12 +489,14 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item p {
+  font-weight: 400;
+  letter-spacing: 0.5px;
   font-size: 24px;
   line-height: 30px;
   margin: 0px;
   padding: 0px;
   margin-left: 23px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .promo-strip {
@@ -515,8 +518,8 @@ input[type="radio"].visually-hidden {
   width: 135px;
   margin: 0px;
   margin-left: 25px;
-  margin-top: 15px;
-  padding: 13px 0;
+  margin-top: 12px;
+  padding: 10px 0;
 
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -532,14 +535,14 @@ input[type="radio"].visually-hidden {
 .promo-item-materials {
   background-color: #ffbf47;
   background-image: url("../img/promo-bucket.svg");
-  background-position: 215px 30px;
+  background-position: 213px 31px;
   background-repeat: no-repeat;
 }
 
 .promo-item-instruments {
   background-color: #3bbce3;
   background-image: url("../img/promo-drill.svg");
-  background-position: 200px 30px;
+  background-position: 198px 31px;
   background-repeat: no-repeat;
 }
 
@@ -553,7 +556,7 @@ input[type="radio"].visually-hidden {
 .promo-item-sale {
   background-color: #8ed78f;
   background-image: url("../img/promo-truck.svg");
-  background-position: 195px 30px;
+  background-position: 195px 25px;
   background-repeat: no-repeat;
 }
 
@@ -617,10 +620,10 @@ input[type="radio"].visually-hidden {
 
 .switch-button {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 29px;
+  height: 29px;
 
-  top: 45%;
+  top: 118px;
 
   border: none;
   transform: rotate(45deg);
@@ -629,20 +632,20 @@ input[type="radio"].visually-hidden {
 }
 
 .switch-button-right {
-  left: 560px;
-  border-top: 4px solid #ffffff;;
-  border-right: 4px solid #ffffff;;
+  left: 566px;
+  border-top: 3px solid #ffffff;;
+  border-right: 3px solid #ffffff;;
 }
 
 .switch-button-left {
   left: 30px;
-  border-bottom: 4px solid #ffffff;;
-  border-left: 4px solid #ffffff;;
+  border-bottom: 3px solid #ffffff;;
+  border-left: 3px solid #ffffff;;
 }
 
 .slider-item {
   display: none;
-  padding: 25px 0 20px 0;
+  padding: 22px 0 20px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -650,9 +653,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item h3 {
+  letter-spacing: 0.5px;
   max-width: 600px;
   margin: 0;
   margin-left: 25px;
+  margin-bottom: 2px;
 
   font-size: 36px;
   line-height: 36px;
@@ -661,10 +666,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item p {
+  letter-spacing: 0;
   max-width: 400px;
   margin: 0;
   margin-left: 25px;
-  margin-bottom: 125px;
+  margin-bottom: 122px;
 
   font-size: 18px;
   line-height: 24px;
@@ -672,9 +678,9 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
   width: 195px;
-  padding: 13px 0;
+  padding: 10px 0;
   margin: 0;
-  margin-left: 25px;
+  margin-left: 26px;
 }
 
 .slider-button:hover,
@@ -713,6 +719,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #32425c;
   margin-left: 30px;
+  font-weight: 400;
 
   text-transform: uppercase;
 }
@@ -730,7 +737,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 85px;
+  margin-bottom: 64px;
 }
 
 .manufacture-item {
@@ -738,8 +745,8 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  width: 220px;
-  height: 145px;
+  width: 218px;
+  height: 143px;
   border: 1px solid #eaeaea;
 }
 
@@ -756,7 +763,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   background-color: #f4f7f9;
-  padding-top: 68px;
+  padding-top: 42px;
 }
 
 .services-headline {
@@ -803,7 +810,7 @@ input[type="radio"].visually-hidden {
 .services-control-item {
   font-size: 21px;
   line-height: 30px;
-  padding: 16px 22px 16px;
+  padding: 12px 24px 17px;
   background-color: #32425c;
 }
 
@@ -827,7 +834,7 @@ input[type="radio"].visually-hidden {
 .services-list {
   margin: 0;
   padding: 0;
-  margin-top: 75px;
+  margin-top: 68px;
   
   list-style: none;
 }
@@ -877,7 +884,9 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
   margin-left: 80px;
+  margin-top: 23px;
 }
 
 /*Стили для блока о компании*/
@@ -885,7 +894,7 @@ input[type="radio"].visually-hidden {
 .company {
   display: flex;
   justify-content: space-between;
-  margin-top: 55px;
+  margin-top: 84px;
 }
 
 .company h2 {
@@ -893,6 +902,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .company-description {
@@ -905,7 +915,8 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 23px;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .company-transport {
@@ -920,23 +931,14 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   margin: 0;
   margin-left: 35px;
-  margin-bottom: 20px;
-}
-
-.company-address img {
-  margin-top: 7px;
-}
-
-.company-transport li:last-child,
-.company-address img {
-  margin-bottom: 35px;
+  margin-top: 20px;
 }
 
 .company-transport li::before {
   content: "";
 
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: -35px;
 
   width: 25px;
@@ -949,14 +951,20 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
+.company-address img {
+  margin-top: 33px;
+}
+
 .button-map {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 32px;
 }
 
 .button-transport {
   padding: 10px 40px;
+  margin-top: 37px;
 }
 
 .button-map:hover,
@@ -1321,8 +1329,6 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-/*Нужно*/
-
 .filter-input-radio:hover + label::before {
   border-color: #b5b5b5;
 }
@@ -1385,6 +1391,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catolog-item {
+  width: 218px;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -1392,6 +1399,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .catolog-item:hover {
@@ -1427,9 +1435,13 @@ input[type="radio"].visually-hidden {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
+.catolog-item h3 {
+  margin: 0;
+}
+
 .card-name {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 12px;
   font-weight: bold;
   color: #000000;
 }
@@ -1439,12 +1451,15 @@ input[type="radio"].visually-hidden {
 }
 
 .price {
+  margin: 0px auto;
+  margin-top: 16px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #999999;
 
   text-decoration: line-through;
+  text-transform: uppercase;
 }
 
 .discount-price {
@@ -1455,7 +1470,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   width: 80px;
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-top: 10px;
   padding: 10px 30px;
 
   background-color: #ee3643;
@@ -1480,14 +1496,14 @@ input[type="radio"].visually-hidden {
 .without-price {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
 
-  padding-top: 0;
-  min-height: 158px;
+.without-price .discount-price {
+  margin-top: 43px;
 }
 
 .catolog-item-button {
-  font-family: Cuprum;
+  font-family: 'Cuprum', Arial, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -1653,11 +1669,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top-adress {
-  margin-right: 30px;
+  margin-right: 22px;
 }
 
 .footer-top-adress p {
   margin-top: 26px;
+  letter-spacing: 0.2px;
 }
 
 .footer-top ul {
@@ -1671,7 +1688,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-menu {
-  margin-top: 37px;
+  margin-top: 39px;
 }
 
 .footer-categories {
@@ -1766,8 +1783,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-bottom-feedback p {
-  margin-left: 38px;
-  margin-right: 15px;
+  margin-left: 37px;
+  margin-right: 14px;
 }
 
 /*Модальные окна*/

@@ -98,7 +98,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top .bookmarks {
-  padding: 13px 30px 11px 49px;
+  padding: 13px 30px 11px 48px;
   position: relative;
 }
 
@@ -1223,6 +1223,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.price-controls label:nth-child(2) {
+  margin-left: 28px;
+}
+
 .range-controls {
   position: relative;
   margin-bottom: 8px;
@@ -1438,10 +1442,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
   justify-content: space-between;
   font-family: "PT Sans", Arial, sans-serif;
+  width: 700px;
 
   margin: 0;
   padding: 0;
+}
 
+.catolog-list-main {
+  width: 100%;
 }
 
 .catolog-item {

@@ -175,6 +175,8 @@ input[type="radio"].visually-hidden {
 
 .search-input:focus + .submit-indicator {
   background-image: url("../img/icon-search-focus.svg");
+  background-color: #ffffff;
+  opacity: 1;
 }
 
 .search .search-input {
@@ -234,7 +236,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
-  margin-right: 25px;
+  margin-right: 31px;
 }
 
 .user .user-name {
@@ -243,8 +245,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #000000;
   margin: 0;
-  padding: 12px 70px 13px 50px;
-  text-transform: uppercase;
+  padding: 12px 66px 13px 46px;
   font-style: normal;
   margin-bottom: 0px;
 
@@ -265,8 +266,8 @@ input[type="radio"].visually-hidden {
 .user-icon-logout {
   display: block;
   position: absolute;
-  top: 14px;
-  left: 290px;
+  top: 15px;
+  left: 268px;
 
   width: 20px;
   height: 17px;
@@ -287,22 +288,26 @@ input[type="radio"].visually-hidden {
 }
 
 .user-menu {
+  font-size: 16px;
+  line-height: 18px;
   display: flex;
   list-style: none;
   position: relative;
+  padding: 0;
+  padding-left: 18px;
 
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .user-menu::before {
   content: "";
 
   position: absolute;
-  top: 9px;
-  left: 125px;
+  top: 8px;
+  left: 107px;
 
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 
   background-color: #32425c;
   border-radius: 50%;
@@ -317,8 +322,12 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts {
-  margin-left: 45px;
   width: 270px;
+  margin-left: 10px;
+}
+
+.contacts-main {
+  margin-left: 40px;
 }
 
 .contacts .contacts-phone {
@@ -327,9 +336,9 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-style: normal;
   color: #ee3643;
-  padding-top: 10px;
-  padding-left: 70px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-left: 72px;
+  padding-bottom: 9px;
   margin-bottom: 4px;
   margin-top: 0;
 
@@ -457,7 +466,7 @@ input[type="radio"].visually-hidden {
 /*Стили для промо блока*/
 
 .catalog .container {
-  padding-bottom: 60px;
+  padding-bottom: 59px;
 }
 
 .promo {
@@ -586,12 +595,14 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  top: 220px;
+  left: 296px;
+  top: 213px;
+  cursor: pointer;
 }
 
 .slider-controls li {
   display: inline-block;
+  margin-right: 6px;
 }
 
 .slider-controls label {
@@ -602,6 +613,7 @@ input[type="radio"].visually-hidden {
 
   border-radius: 50%; 
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .slider-input:checked + label::after {
@@ -981,8 +993,9 @@ input[type="radio"].visually-hidden {
 .breadcrumbs {
   display: flex;
   list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
 
-  margin: 25px 0px;
+  margin: 21px 0px;
   padding: 0;
 }
 
@@ -1005,7 +1018,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li {
-  margin-right: 35px;
+  margin-right: 41px;
 }
 
 .breadcrumbs .next {
@@ -1016,8 +1029,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 3px;
-  left: -20px;
+  top: 2px;
+  left: -24px;
 
   width: 8px;
   height: 12px;
@@ -1036,25 +1049,30 @@ input[type="radio"].visually-hidden {
 .page-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #32425c;
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 30px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 29px;
+  padding-top: 30px;
+  padding-bottom: 27px;
 
   background-color: #f2f6f8;
   text-transform: uppercase;
+}
+
+.filters {
+  margin-right: 20px;
 }
 
 .filter-headline {
   font-size: 13px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 20px;
-  padding-left: 18px;
+  margin-bottom: 11px;
+  padding-left: 20px;
   min-width: 220px;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
 
   background-color: #f7f3ec;
@@ -1068,7 +1086,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 18px;
+  padding-left: 21px;
   padding-top: 10px;
   padding-bottom: 9px;
 
@@ -1109,7 +1127,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-up {
-  margin-left: 41px;
+  margin-left: 46px;
   margin-top: 5px;
   width: 11px;
   height: 10px;
@@ -1153,9 +1171,15 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   text-transform: uppercase;
+}
+
+.filter-range {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 17px;
 }
 
 .price-controls {
@@ -1191,7 +1215,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 39px 0;
 
   background-color: #f7f3ec;
@@ -1217,11 +1241,11 @@ input[type="radio"].visually-hidden {
   top: 29px;
   left: 20px;
 
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
 
   background: #c5c5c5;
-  border: 10px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -1242,12 +1266,14 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
+  margin-bottom: 19px;
 
   text-transform: uppercase;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .filter .filter-option {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 
@@ -1319,8 +1345,8 @@ input[type="radio"].visually-hidden {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -35px;
+  top: -2px;
+  left: -34px;
 
   width: 15px;
   height: 15px;
@@ -1336,8 +1362,8 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -28px;
+  top: 5px;
+  left: -27px;
 
   width: 9px;
   height: 9px;
@@ -1368,15 +1394,12 @@ input[type="radio"].visually-hidden {
   width: 140px;
   height: 38px;
   color: #000000;
+  margin-top: 38px;
 
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 
   cursor: pointer;
-}
-
-.catalog {
-  margin-left: 20px;
 }
 
 .catolog-list {
@@ -1388,6 +1411,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
+
 }
 
 .catolog-item {
@@ -1406,11 +1430,19 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.button-green-buy {
+  position: relative;
+}
+
 .catolog-item-basket {
+  position: absolute;
   display: inline-block;
+
   width: 15px;
   height: 15px;
-  margin-right: 20px;
+
+  top: 9px;
+  left: 11px;
 
   background: url("../img/cart-icon.svg") no-repeat 0 0;
   opacity: 0.3;
@@ -1472,7 +1504,7 @@ input[type="radio"].visually-hidden {
   width: 80px;
   margin: 0 auto;
   margin-top: 10px;
-  padding: 10px 30px;
+  padding: 10px 26px;
 
   background-color: #ee3643;
   border-radius: 3px;
@@ -1483,8 +1515,8 @@ input[type="radio"].visually-hidden {
   content: "";
   
   position: absolute;
-  top: -0px;
-  right: -20px;
+  top: 0;
+  right: -27px;
   
   width: 0;
   height: 0;
@@ -1510,7 +1542,7 @@ input[type="radio"].visually-hidden {
   
   width: 218px;
   height: 88px;
-  padding: 40px 0;
+  padding: 30px 0;
   
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
@@ -1525,7 +1557,7 @@ input[type="radio"].visually-hidden {
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding: 7px 0;
+  padding: 8px 0;
   
   background-color: #63a63e;
   border: 3px solid #63a63e;
@@ -1575,7 +1607,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
-  margin-left: 40px;
+  margin-top: 32px;
 }
 
 .pagination-item {
@@ -1604,7 +1636,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item-current a {
   background-color: #ee3643;
-  border: none;
+  border: 1px solid #ee3643;
 }
 
 .pagination-item-current a:hover {
@@ -1618,6 +1650,7 @@ input[type="radio"].visually-hidden {
 
 .about-reformers {
   background-color: #f4f7f9;
+  padding-bottom: 7px;
 }
 
 .about-reformers .container {
@@ -1627,8 +1660,9 @@ input[type="radio"].visually-hidden {
 .about-reformers-headline {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   text-transform: uppercase;
 }
@@ -1636,7 +1670,9 @@ input[type="radio"].visually-hidden {
 .about-reformers-description {
   font-size: 13px;
   line-height: 24px;
+  font-weight: 400;
   font-family: "PT Sans";
+  letter-spacing: 0.1px;
 
   margin: 0;
   padding: 0;

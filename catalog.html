@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
           <input type="submit" class="submit-indicator">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="basket basket-active" href="#">Корзина: 0</a>
+        <a class="basket basket-active" href="#">Корзина: 10</a>
         <a class="order" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -73,24 +73,25 @@
             <fieldset>
               <legend>Цена:</legend>
               <div class="filter-range">
-                  <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="range-toggle range-toggle-min"></div>
-                      <div class="range-toggle range-toggle-max"></div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="price-controls">
-                    <label class="min-price"><input type="text" name="min-price" value="0"></label>
-                    <label class="max-price"><input type="text" name="max-price" value="30000"></label>
-                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                  <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+                </div>
               </div>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch"
+                    checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
@@ -98,7 +99,8 @@
                   <label for="filter-interscol">Интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita"
+                    checked>
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-option">
@@ -115,11 +117,13 @@
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="battery" id="filter-battery" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="battery"
+                    id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="networked" id="filter-networked">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="networked"
+                    id="filter-networked">
                   <label for="filter-networked">Сетевые</label>
                 </li>
               </ul>
@@ -131,10 +135,10 @@
           <h2 class="visually-hidden">Список Перфораторов</h2>
           <div class="sorting">
             <p class="sorting-headline">Сортировка:</p>
-            <a href="#" class="sorting-name sorting-name-price">По цене</a>
+            <a href="#" class="sorting-name sorting-name-price sorting-name-active">По цене</a>
             <a href="#" class="sorting-name sorting-name-type">По типу</a>
             <a href="#" class="sorting-name sorting-name-function">По функционалу</a>
-            <a href="#" class="sorting-up"></a>
+            <a href="#" class="sorting-up sorting-up-active"></a>
             <a href="#" class="sorting-down"></a>
           </div>
           <ul class="catolog-list">
@@ -266,9 +270,12 @@
       <div class="container">
         <h2 class="about-reformers-headline">Пара слов о перефораторах</h2>
         <p class="about-reformers-description">
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br> 
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В 
-          ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче, бетоне и камне. <br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+          дрели, шуруповерта и отбойного молотка. В
+          ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+          ударная дрель.
         </p>
       </div>
     </section>
@@ -314,7 +321,7 @@
         <div class="footer-bottom-feedback">
           <p>Обратная связь: <br>
             <a class="footer-yellow-name" href="#">mail@htmlacademy.ru</a></p>
-          <p>Разработано - <br>
+          <p>Разработано &#8212; <br>
             <a class="footer-yellow-name" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>

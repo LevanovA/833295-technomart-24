@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   width: 265px;
   padding-top: 14px;
-  padding-bottom: 11px; 
+  padding-bottom: 12px; 
   padding-left: 49px;
   outline: none;
 
@@ -351,6 +351,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts .contacts-phone {
+  display: block;
   position: relative;
   font-size: 21px;
   line-height: 21px;
@@ -474,12 +475,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation .site-navigation-items:hover {
-  background-color: #1d2739;
+  background-color: #212a3a;;
 }
 
 .site-navigation .site-navigation-items:active {
   color: rgba(255, 255, 255, 0.5);
-  background-color: #1d2739;
+  background-color: #161d29;
 }
 
 /*Стили для главной страницы*/
@@ -919,6 +920,18 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-left: 80px;
   margin-top: 23px;
+}
+
+.services-item-delivery {
+  width: 275px;
+}
+
+.services-item-warranty {
+  width: 375px;
+}
+
+.services-item-credit {
+  width: 300px;
 }
 
 /*Стили для блока о компании*/
@@ -1420,7 +1433,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   
@@ -1684,6 +1697,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item-current a {
+  color: #ffffff;
   background-color: #ee3643;
   border: 1px solid #ee3643;
 }
@@ -1758,8 +1772,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top-adress p {
+  margin: 0;
   margin-top: 26px;
   letter-spacing: 0.2px;
+}
+
+.footer-phone {
+  display: block;
+  margin: 0;
 }
 
 .footer-top ul {
@@ -1798,6 +1818,14 @@ input[type="radio"].visually-hidden {
 .footer-bottom .container {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-bottom-copy {
+  margin-top: 15px;
+}
+
+.footer-bottom-copy p {
+  margin: 0;
 }
 
 .footer-bottom-social {
@@ -1870,6 +1898,10 @@ input[type="radio"].visually-hidden {
 .footer-bottom-feedback p {
   margin-left: 37px;
   margin-right: 14px;
+}
+
+.footer-yellow-name {
+  display: block;
 }
 
 /*Модальные окна*/

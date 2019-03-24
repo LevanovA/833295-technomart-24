@@ -264,8 +264,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.user-icon-men {
-  display: block;
+.user-name::before {
+  content: "";
   position: absolute;
   top: 13px;
   left: 13px;
@@ -273,6 +273,7 @@ input[type="radio"].visually-hidden {
   width: 20px;
   height: 18px;
   background-image: url("../img/icon-user-normal.svg");
+  background-repeat: no-repeat;
 }
 
 .user-icon-logout {
@@ -287,20 +288,24 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-logout-normal.svg");
 }
 
-.user-icon-men:hover {
+.user-name:hover::before {
   background-image: url("../img/icon-user-hover.svg");
+}
+
+.user-name:hover + .user-icon-logout {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
+.user-name:active::before {
+  background-image: url("../img/icon-user-normal.svg");
+}
+
+.user-name:active + .user-icon-logout {
+  background-image: url("../img/icon-logout-normal.svg");
 }
 
 .user-icon-logout:hover {
   background-image: url("../img/icon-logout-hover.svg");
-}
-
-.user-icon-men:active {
-  background-image: url("../img/icon-user-normal.svg");
-}
-
-.user-icon-logout:active {
-  background-image: url("../img/icon-logout-normal.svg");
 }
 
 .user-name:active {
@@ -513,7 +518,7 @@ input[type="radio"].visually-hidden {
 .promo-item {
   position: relative;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   margin: 0px;
   margin-top: 20px;
 }
@@ -523,6 +528,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.5px;
   font-size: 24px;
   line-height: 30px;
+  width: 150px;
   margin: 0px;
   padding: 0px;
   margin-left: 23px;
@@ -549,6 +555,7 @@ input[type="radio"].visually-hidden {
   margin: 0px;
   margin-left: 25px;
   margin-top: 12px;
+  margin-bottom: 20px;
   padding: 10px 0;
 
   background-color: rgba(0, 0, 0, 0.1);
@@ -623,6 +630,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls li {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 6px;
 }
 
@@ -844,24 +852,22 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 30px;
   padding: 12px 24px 17px;
-  background-color: #32425c;
-}
-
-.services-control-delivery {
-  background-color: #ffffff;
-}
-
-.services-control-warranty,
-.services-control-credit {
   color: #ffffff;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+  cursor: pointer;
 }
 
-.services-control-warranty {
-  border-bottom: 1px solid #293449;
+.services-control-item:hover {
+  color: #ffffff;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #293449;
 }
 
-.services-control-credit {
-  border-top: 1px solid #405069;
+.services-control-active {
+  color: #32425c;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
 }
 
 .services-list {
@@ -962,6 +968,14 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin: 0;
   margin-top: 25px;
+}
+
+.company-description-delivery {
+  width: 400px;
+}
+
+.company-address p {
+  width: 200px;
 }
 
 .company-transport {
@@ -1182,6 +1196,12 @@ input[type="radio"].visually-hidden {
 
 .sorting-up:hover,
 .sorting-down:hover {
+  background-image: url("../img/sorting-up.svg");
+  opacity: 1;
+}
+
+.sorting-down:hover {
+  background-image: url("../img/sorting-down.svg");
   opacity: 1;
 }
 
@@ -1480,6 +1500,7 @@ input[type="radio"].visually-hidden {
   width: 218px;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
 
   background-color: #ffffff;
@@ -1499,6 +1520,7 @@ input[type="radio"].visually-hidden {
 .catolog-item-basket {
   position: absolute;
   display: inline-block;
+  vertical-align: middle;
 
   width: 15px;
   height: 15px;
@@ -1757,6 +1779,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top .logo {
   display: inline-block;
+  vertical-align: middle;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   padding: 20px 40px;
 
@@ -1923,6 +1946,10 @@ input[type="radio"].visually-hidden {
   padding: 0px;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
   top: 9px;
@@ -1961,16 +1988,11 @@ input[type="radio"].visually-hidden {
   transform: rotate(-45deg);
 }
 
-.modal-letter {
-  top: 470px;
-  left: 50%;
-  margin-left: -310px;
-}
-
+.modal-letter,
 .modal-productbasket {
-  top: 470px;
+  top: 50%;
   left: 50%;
-  margin-left: -310px;
+  transform: translate(-50%, -50%);
 }
 
 /*Модальное окно на главной*/

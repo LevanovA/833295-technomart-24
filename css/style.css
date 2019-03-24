@@ -1791,18 +1791,20 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top-adress {
-  margin-right: 22px;
+  margin-right: 26px;
 }
 
 .footer-top-adress p {
   margin: 0;
   margin-top: 26px;
+  margin-left: 3px;
   letter-spacing: 0.2px;
 }
 
 .footer-phone {
   display: block;
   margin: 0;
+  margin-left: 4px;
 }
 
 .footer-top ul {

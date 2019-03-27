@@ -18,8 +18,10 @@
           <img width="110" height="18" src="./img/logo.svg" alt="Логотип Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-input" type="search" placeholder="Поиск:">
-          <input type="submit" class="submit-indicator">
+          <label for="search-field" class="visually-hidden"></label>
+          <input class="search-input" id="search-field" type="search" placeholder="Поиск:">
+          <input type="submit" class="submit-indicator" id="magnifier">
+          <label for="magnifier" class="visually-hidden"></label>
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
@@ -209,9 +211,9 @@
         <div class="services-slider">
           <div class="services-control">
             <div class="services-boxshadow"></div>
-            <div class="services-control-item services-control-active">Доставка</div>
-            <div class="services-control-item">Гарантия</div>
-            <div class="services-control-item">Кредит</div>
+            <button class="services-control-item services-control-active">Доставка</button>
+            <button class="services-control-item">Гарантия</button>
+            <button class="services-control-item">Кредит</button>
           </div>
           <ul class="services-list">
             <li class="services-item">
@@ -327,7 +329,7 @@
             <input type="text" name="name" placeholder="Имя Фамилия" value="" id="modal-name">
           </p>
           <p class="letter-form-item">
-            <label for="modal-email">Ваше имя:</label>
+            <label for="modal-email">Ваш e-mail:</label>
             <input type="text" name="email" placeholder="email@example.com" value="" id="modal-email">
           </p>
           <p class="letter-form-item">

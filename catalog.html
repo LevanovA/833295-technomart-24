@@ -18,8 +18,10 @@
           <img src="./img/logo.svg" width="111" height="18" alt="Логотип Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-input" type="search" placeholder="Поиск:">
-          <input type="submit" class="submit-indicator">
+          <label for="search-field" class="visually-hidden"></label>
+          <input class="search-input" id="search-field" type="search" placeholder="Поиск:">
+          <input type="submit" class="submit-indicator" id="magnifier">
+          <label for="magnifier" class="visually-hidden"></label>
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket basket-active" href="#">Корзина: 10</a>
@@ -127,7 +129,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button filter-button">Показать</button>
+            <button class="button filter-button" type=“submit”>Показать</button>
           </form>
         </section>
         <section class="catalog">

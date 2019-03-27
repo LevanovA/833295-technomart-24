@@ -329,18 +329,24 @@
   <!--Pop-up добавления товара в корзину-->
   <section class="modal modal-productbasket">
     <div class="modal-top-productbasket">
-      <span class="check-mark"></span>
-      <p class="modal-top-text">
-        Товар добавлен в корзину!
-      </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <div class="modal-container">
+        <span class="check-mark"></span>
+        <p class="modal-top-text">
+          Товар добавлен в корзину!
+        </p>
+      </div>
     </div>
-    <p class="modal-bottom">
-      <a class="button button-checkout" href="#">Оформить заказ</a>
-      <button class="button button-order">Продолжить покупки</button>
-    </p>
+    <div class="modal-bottom-productbasket">
+      <div class="modal-container">
+        <a class="button button-checkout" href="#">Оформить заказ</a>
+        <button class="button button-order" type="button">Продолжить покупки</button>
+      </div>
+    </div>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
+
   <script src="./js/javascript.min.js"></script>
+
 </body>
 
 </html>

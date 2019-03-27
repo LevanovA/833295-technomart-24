@@ -319,9 +319,9 @@
   <!--Pop-up формы обратной связи-->
   <section class="modal modal-letter">
     <h2 class="visually-hidden">Форма написания письма</h2>
-    <div class="modal-top-letter">
-      <div class="container-modal">
-        <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="letter-form-top">
+        <div class="modal-container">
           <p class="letter-form-item">
             <label for="modal-name">Ваше имя:</label>
             <input type="text" name="name" placeholder="Имя Фамилия" value="" id="modal-name">
@@ -334,15 +334,19 @@
             <label for="modal-text">Текст письма:</label>
             <textarea name="text" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
           </p>
-        </form>
-        <button class="button modal-close" type="button">Закрыть</button>
-      </div>
-    </div>
-    <p class="modal-bottom">
-      <button class="button button-map">Отправить</button>
-    </p>
+        </div>
+      </fieldset>
+      <fieldset class="letter-form-bottom">
+        <div class="modal-container">
+          <button class="button modal-letter-button" type="submit">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+    <button class="button modal-close" type="button">Закрыть</button>
   </section>
+
   <script src="./js/javascript.min.js"></script>
+
 </body>
 
 </html>
